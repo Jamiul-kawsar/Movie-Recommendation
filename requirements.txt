@@ -11,8 +11,10 @@ click==8.1.7
 colorama==0.4.6
 contourpy==1.2.1
 cycler==0.12.1
+filelock==3.17.0
 Flask==3.0.3
 fonttools==4.51.0
+gdown==5.2.0
 gitdb==4.0.12
 GitPython==3.1.44
 idna==3.7
@@ -50,6 +52,7 @@ pyparsing==3.1.2
 pyperclip==1.9.0
 PyRect==0.2.0
 PyScreeze==0.1.30
+PySocks==1.7.1
 python-dateutil==2.9.0.post0
 pytweening==1.2.0
 pytz==2024.1
@@ -69,6 +72,7 @@ tenacity==9.0.0
 threadpoolctl==3.5.0
 toml==0.10.2
 tornado==6.4.2
+tqdm==4.67.1
 typing_extensions==4.12.2
 tzdata==2024.1
 update==0.0.1
