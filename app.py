@@ -26,7 +26,7 @@ print("Data loaded successfully")
 
 # show the title
 # show the movie recommendation system
-st.title("Welcome to My Movie Recommendation System!")
+st.title("I Love You Jaaaan!")
 # add a image to the app
 st.image("IMG_20250206_165231.jpg", use_column_width=False)
 select_value = st.selectbox("Select a movie", movies_list)
