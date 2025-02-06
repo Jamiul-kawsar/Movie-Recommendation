@@ -26,6 +26,7 @@ print("Data loaded successfully")
 
 # show the title
 # show the movie recommendation system
+st.title("Welcome to Jamiul's System")
 st.header("Movie Recommendation System")
 select_value = st.selectbox("Select a movie", movies_list)
 
