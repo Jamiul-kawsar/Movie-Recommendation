@@ -28,7 +28,7 @@ print("Data loaded successfully")
 # show the movie recommendation system
 st.title("Welcome to Jamiul's System")
 # add a image to the app
-st.image("https://media.giphy.com/media/3o7TKz5v8X2nZLXp8E/giphy.gif", use_column_width=True)
+st.image("IMG_20250206_165231.jpg", caption="Welcome to My Movie Recommender!", use_column_width=True)
 st.header("Movie Recommendation System")
 select_value = st.selectbox("Select a movie", movies_list)
 
