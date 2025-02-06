@@ -1,16 +1,31 @@
 import streamlit as st
 import pickle
 import requests
+import gdown
+import os
 
 
 # Load the data
 movies = pickle.load(open('movies_list.pkl', 'rb'))
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+#similarity = pickle.load(open('similarity.pkl', 'rb'))
 movies_list = movies['title'].values
 
-pickle.load(open('simIlarity.pkl', 'rb'))
+# google drive file id
+file_id = "1myEsA8RlFPf0H50FxjouhYh8bSCY-HMc"
+output = "similarity.pkl"
 
+# download the file if doesn't exist
+if not os.path.exists(output):
+    gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
+    
+# load the similarity matrix
+with open(output, 'rb') as file:
+    similarity = pickle.load(file)
 
+print("Data loaded successfully")
+
+# show the title
+# show the movie recommendation system
 st.header("Movie Recommendation System")
 select_value = st.selectbox("Select a movie", movies_list)
 
