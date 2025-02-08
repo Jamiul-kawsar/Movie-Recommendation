@@ -106,7 +106,7 @@ st.markdown(
         }
     </style>
     <div class="footer">
-        <p>Made with  by <a href="https://github.com/Jamiul-kawsar" target="_blank">Jamiul Kawsar</a></p>
+        <p>Made by <a href="https://github.com/Jamiul-kawsar" target="_blank">Jamiul Kawsar</a></p>
     </div>
     """,
     unsafe_allow_html=True
